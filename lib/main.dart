@@ -12,40 +12,30 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
-        body: Container(
-          margin: EdgeInsets.symmetric(
-            vertical: 30.0,
-          ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        body: SafeArea(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Container(
-                height: 100.0,
-                width: 100.0,
-                color: Colors.red,
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/Ferdi Redelinghuys -1.jpg'),
               ),
-              Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Container(
-                      height: 100.0,
-                      width: 100.0,
-                      color: Colors.yellow,
-                    ),
-                    Container(
-                      height: 100.0,
-                      width: 100.0,
-                      color: Colors.green,
-                    ),
-                  ],
+              Text(
+                'Ferdi Redelinghuys',
+                style: TextStyle(
+                  fontFamily: 'DancingScript',
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                width: 100.0,
-                height: 100.0,
-                color: Colors.blue,
+              Text(
+                'MASTER COMMANDER',
+                style: TextStyle(
+                  fontFamily: 'SourceSansPro',
+                  fontSize: 20.0,
+                  color: Colors.white,
+                ),
               ),
             ],
           ),
