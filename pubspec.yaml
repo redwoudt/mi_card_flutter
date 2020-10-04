@@ -28,4 +28,4 @@ flutter:
       - asset: fonts/DancingScript-VariableFont_wght.ttf
   - family: SourceSansPro
     fonts:
-      - asset: fonts/SourceSansPro-Light.ttf
+      - asset: fonts/SourceSansPro-Regular.ttf
